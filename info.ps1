@@ -1,4 +1,7 @@
-﻿# Check if Admin
+# Define webhook URL
+$webhook = "https://hooks.slack.com/services/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"
+ 
+# Check if Admin
 $IsAdmin = New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())
 $Admin = $IsAdmin.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
 
